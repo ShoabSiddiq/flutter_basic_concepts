@@ -108,10 +108,27 @@ class FlutterClass2 extends StatelessWidget {
                   )// Text (and icon) color
               ),
               child: Text("Submit")),
-          
-          
-          
-          Container(
+
+              SizedBox(
+                height: 20,
+              ),
+
+        ElevatedButton(onPressed: (){
+                   phoneController.clear();
+        },
+            style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue, // Button background color
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15), // button shape
+
+                )// Text (and icon) color
+            ),
+            child: Text("Clear")),
+
+
+
+              Container(
             margin: EdgeInsets.only(top: 50),
             width: 200,
             height:200,
